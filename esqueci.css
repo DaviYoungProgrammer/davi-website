@@ -1,0 +1,64 @@
+/* Estilo da mensagem de "Esqueceu a Senha?" */
+.message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-container h1 {
+    color: #1976d2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .message-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #1976d2;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #1565c0;
+  }
+
+  .fill-button {
+    padding: 12px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #1976d2; /* Cor de fundo azul */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px; /* Espaço acima do botão */
+    width: 100%; /* Largura total */
+    max-width: 300px; /* Largura máxima */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra do botão */
+  }
+  
+  .fill-button:hover {
+    background-color: #1565c0; /* Cor de fundo ao passar o mouse */
+  }
+  
+  .fill-button:active {
+    transform: scale(0.95); /* Efeito de clique */
+  }
+  
+  

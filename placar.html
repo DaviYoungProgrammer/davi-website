@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placar de Jogo</title>
+  <link rel="stylesheet" href="placar.css">
+</head>
+<body>
+  <div class="container fade-in">
+    <h1>Placar de Jogo</h1>
+    
+    <div class="scoreboard">
+      <!-- Player 1 Section -->
+      <div class="player">
+        <input id="player1-name" type="text" value="Jogador 1">
+        <div class="score-display">
+          <button onclick="decreaseScore(1)">-</button>
+          <span id="player1-score" class="score">0</span>
+          <button onclick="increaseScore(1)">+</button>
+        </div>
+      </div>
+
+      <!-- Player 2 Section -->
+      <div class="player">
+        <input id="player2-name" type="text" value="Jogador 2">
+        <div class="score-display">
+          <button onclick="decreaseScore(2)">-</button>
+          <span id="player2-score" class="score">0</span>
+          <button onclick="increaseScore(2)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <button id="reset" onclick="resetScore()">Resetar Placar</button>
+    <button id="end-game" onclick="endGame()">Finalizar Jogo</button>
+
+    <div id="result" class="result-message"></div>
+  </div>
+
+  <script src="placar.js"></script>
+</body>
+</html>
